@@ -1,4 +1,7 @@
 My2015::Application.routes.draw do
+ # get "pages/accueil"
+  get "pages/contact"
+   get 'accueil' => 'pages#accueil'# pour unitliser accueil_path dans les liens link_to
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
